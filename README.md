@@ -87,6 +87,17 @@ http://localhost:8080
 ```
 Authorization: Bearer <SEU_TOKEN>
 ```
+### 3️⃣ Testando endpoint protegido `/test`
+
+- O endpoint `/test` é protegido, então **exige autenticação** com JWT.  
+- Após fazer login (`/auth/login`) e receber o token, você deve enviá-lo no cabeçalho `Authorization`.
+
+**Exemplo de requisição** (`GET /test`):
+```http
+GET http://localhost:8080/test
+Authorization: Bearer <SEU_TOKEN>
+```
+
 ### 🧾 Entidades principais
 #### User
 
